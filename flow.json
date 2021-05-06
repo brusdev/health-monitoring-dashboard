@@ -1,0 +1,1089 @@
+[
+    {
+        "id": "a3c15485.9e4108",
+        "type": "tab",
+        "label": "health-monitoring-dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "57c57630.856f18",
+        "type": "mqtt-broker",
+        "name": "healthBroker",
+        "broker": "ex-aao-mqtt-0-svc-rte-health-monitoring.apps.cluster-b861.b861.sandbox760.opentlc.com",
+        "port": "443",
+        "tls": "77545a55.9c4c34",
+        "clientid": "",
+        "usetls": true,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "2e840544.5a19ba",
+        "type": "ui_group",
+        "name": "Sensor Simulator 1",
+        "tab": "6d72b03.864055",
+        "order": 4,
+        "disp": true,
+        "width": "12",
+        "collapse": true
+    },
+    {
+        "id": "f2eaf8a5.7bdf48",
+        "type": "ui_group",
+        "name": "Monitor 1",
+        "tab": "6d72b03.864055",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "ace65de7.04d12",
+        "type": "ui_group",
+        "name": "Sensor Simulator 2",
+        "tab": "6d72b03.864055",
+        "order": 5,
+        "disp": true,
+        "width": "12",
+        "collapse": true
+    },
+    {
+        "id": "5caadf11.13ddd",
+        "type": "ui_group",
+        "name": "Monitor 2",
+        "tab": "6d72b03.864055",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "2b1cb0f9.1a148",
+        "type": "ui_group",
+        "name": "Monitor 0",
+        "tab": "6d72b03.864055",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "77545a55.9c4c34",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false
+    },
+    {
+        "id": "6d72b03.864055",
+        "type": "ui_tab",
+        "name": "Health Monitoring Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "143c1638.6cbd7a",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "dae453ac.27b2f",
+        "type": "mqtt out",
+        "z": "a3c15485.9e4108",
+        "name": "mqtt-broker",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "broker": "57c57630.856f18",
+        "x": 1190,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "f3712083.f2a3a",
+        "type": "inject",
+        "z": "a3c15485.9e4108",
+        "name": "sensorSimulatorTimer",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 370,
+        "y": 900,
+        "wires": [
+            [
+                "28ca2025.123eb",
+                "37b4901a.97131"
+            ]
+        ]
+    },
+    {
+        "id": "28ca2025.123eb",
+        "type": "function",
+        "z": "a3c15485.9e4108",
+        "name": "sensorSimulatorDataFunction1",
+        "func": "if (flow.get(\"sensorSimulatorEnabled1\")) {\n    msg.topic = \"users/1/sensor/data\";\n    msg.payload = {\n        user: \"1\",\n        heartrate: flow.get(\"sensorSimulatorHeartrate1\"),\n        oxygen: flow.get(\"sensorSimulatorOxygen1\"),\n        temperature: flow.get(\"sensorSimulatorTemperature1\")\n    };\n\n    return msg;\n}\n\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 950,
+        "y": 880,
+        "wires": [
+            [
+                "dae453ac.27b2f"
+            ]
+        ]
+    },
+    {
+        "id": "6fd24999.9b9048",
+        "type": "inject",
+        "z": "a3c15485.9e4108",
+        "name": "init",
+        "props": [
+            {
+                "p": "payload",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            [
+                "bfe992de.1f2fe",
+                "da6d7119.a8531",
+                "b4e9e45b.b79088",
+                "ac830f93.94a4a",
+                "f422f54f.b1d1c8",
+                "d61c4119.1c566"
+            ]
+        ]
+    },
+    {
+        "id": "bfe992de.1f2fe",
+        "type": "function",
+        "z": "a3c15485.9e4108",
+        "name": "initSensorSimulator1",
+        "func": "flow.set(\"sensorSimulatorHeartrate1\", 65);\nflow.set(\"sensorSimulatorOxygen1\", 98);\nflow.set(\"sensorSimulatorTemperature1\", 36);\nflow.set(\"sensorSimulatorEnabled1\", false);\n\nreturn [{payload:65},{payload:98},{payload:36},{payload:false}];",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 540,
+        "wires": [
+            [
+                "91d1d9dd.7f22a8"
+            ],
+            [
+                "685e8608.7310c8"
+            ],
+            [
+                "63ddcbf3.89f934"
+            ],
+            [
+                "ebae7a68.961df8"
+            ]
+        ]
+    },
+    {
+        "id": "ebae7a68.961df8",
+        "type": "ui_switch",
+        "z": "a3c15485.9e4108",
+        "name": "sensorSimulatorEnabled1",
+        "label": "enabled",
+        "tooltip": "",
+        "group": "2e840544.5a19ba",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "sensorSimulatorEnabled1",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 610,
+        "y": 600,
+        "wires": [
+            [
+                "12375ee1.223181",
+                "27aeea91.fd01a6"
+            ]
+        ]
+    },
+    {
+        "id": "91d1d9dd.7f22a8",
+        "type": "ui_slider",
+        "z": "a3c15485.9e4108",
+        "name": "sensorSimulatorHeartrate1",
+        "label": "heartrate",
+        "tooltip": "",
+        "group": "2e840544.5a19ba",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "sensorSimulatorHeartrate1",
+        "min": "30",
+        "max": "300",
+        "step": 1,
+        "x": 620,
+        "y": 480,
+        "wires": [
+            [
+                "12375ee1.223181"
+            ]
+        ]
+    },
+    {
+        "id": "a91a68d6.782638",
+        "type": "ui_chart",
+        "z": "a3c15485.9e4108",
+        "name": "monitorChart1",
+        "group": "f2eaf8a5.7bdf48",
+        "order": 1,
+        "width": "8",
+        "height": "4",
+        "label": "",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 800,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da6d7119.a8531",
+        "type": "ui_button",
+        "z": "a3c15485.9e4108",
+        "name": "monitorClear1",
+        "group": "f2eaf8a5.7bdf48",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Clear",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "",
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "a91a68d6.782638",
+                "c32706ae.56d2e8"
+            ]
+        ]
+    },
+    {
+        "id": "63ddcbf3.89f934",
+        "type": "ui_slider",
+        "z": "a3c15485.9e4108",
+        "name": "sensorSimulatorTemperature1",
+        "label": "temperature",
+        "tooltip": "",
+        "group": "2e840544.5a19ba",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "sensorSimulatorTemperature1",
+        "min": "30",
+        "max": "50",
+        "step": 1,
+        "x": 630,
+        "y": 560,
+        "wires": [
+            [
+                "12375ee1.223181"
+            ]
+        ]
+    },
+    {
+        "id": "685e8608.7310c8",
+        "type": "ui_slider",
+        "z": "a3c15485.9e4108",
+        "name": "sensorSimulatorOxygen1",
+        "label": "oxygen",
+        "tooltip": "",
+        "group": "2e840544.5a19ba",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "sensorSimulatorOxygen1",
+        "min": "30",
+        "max": "100",
+        "step": 1,
+        "x": 610,
+        "y": 520,
+        "wires": [
+            [
+                "12375ee1.223181"
+            ]
+        ]
+    },
+    {
+        "id": "f422f54f.b1d1c8",
+        "type": "sse-client",
+        "z": "a3c15485.9e4108",
+        "name": "",
+        "url": "http://health-service-health-monitoring.apps.cluster-b861.b861.sandbox760.opentlc.com/health/users/alerts",
+        "events": [],
+        "headers": {},
+        "proxy": "",
+        "restart": false,
+        "rejectUnauthorized": true,
+        "withCredentials": true,
+        "timeout": "5000",
+        "x": 310,
+        "y": 40,
+        "wires": [
+            [
+                "e806341c.07d498"
+            ]
+        ]
+    },
+    {
+        "id": "90fc25da.5025d8",
+        "type": "ui_toast",
+        "z": "a3c15485.9e4108",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 790,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "37b4901a.97131",
+        "type": "function",
+        "z": "a3c15485.9e4108",
+        "name": "sensorSimulatorDataFunction2",
+        "func": "if (flow.get(\"sensorSimulatorEnabled2\")) {\n    msg.topic = \"users/2/sensor/data\";\n    msg.payload = {\n        user: \"2\",\n        heartrate: flow.get(\"sensorSimulatorHeartrate2\"),\n        oxygen: flow.get(\"sensorSimulatorOxygen2\"),\n        temperature: flow.get(\"sensorSimulatorTemperature2\")\n    };\n\n    return msg;\n}\n\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 950,
+        "y": 920,
+        "wires": [
+            [
+                "dae453ac.27b2f"
+            ]
+        ]
+    },
+    {
+        "id": "12375ee1.223181",
+        "type": "function",
+        "z": "a3c15485.9e4108",
+        "name": "setSensorSimulatorValue",
+        "func": "flow.set(msg.topic, msg.payload);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 930,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "2b064575.a5782a",
+        "type": "ui_switch",
+        "z": "a3c15485.9e4108",
+        "name": "sensorSimulatorEnabled2",
+        "label": "enabled",
+        "tooltip": "",
+        "group": "ace65de7.04d12",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "sensorSimulatorEnabled2",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 610,
+        "y": 800,
+        "wires": [
+            [
+                "12375ee1.223181",
+                "2da6e4d8.78033c"
+            ]
+        ]
+    },
+    {
+        "id": "fc33f847.d6af78",
+        "type": "ui_slider",
+        "z": "a3c15485.9e4108",
+        "name": "sensorSimulatorHeartrate2",
+        "label": "heartrate",
+        "tooltip": "",
+        "group": "ace65de7.04d12",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "sensorSimulatorHeartrate2",
+        "min": "30",
+        "max": "300",
+        "step": 1,
+        "x": 620,
+        "y": 680,
+        "wires": [
+            [
+                "12375ee1.223181"
+            ]
+        ]
+    },
+    {
+        "id": "86c0c2a4.6367a",
+        "type": "ui_slider",
+        "z": "a3c15485.9e4108",
+        "name": "sensorSimulatorTemperature2",
+        "label": "temperature",
+        "tooltip": "",
+        "group": "ace65de7.04d12",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "sensorSimulatorTemperature2",
+        "min": "30",
+        "max": "50",
+        "step": 1,
+        "x": 630,
+        "y": 760,
+        "wires": [
+            [
+                "12375ee1.223181"
+            ]
+        ]
+    },
+    {
+        "id": "c9eed566.71b6d8",
+        "type": "ui_slider",
+        "z": "a3c15485.9e4108",
+        "name": "sensorSimulatorOxygen2",
+        "label": "oxygen",
+        "tooltip": "",
+        "group": "ace65de7.04d12",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "sensorSimulatorOxygen2",
+        "min": "30",
+        "max": "100",
+        "step": 1,
+        "x": 610,
+        "y": 720,
+        "wires": [
+            [
+                "12375ee1.223181"
+            ]
+        ]
+    },
+    {
+        "id": "c32706ae.56d2e8",
+        "type": "ui_gauge",
+        "z": "a3c15485.9e4108",
+        "name": "monitorScore1",
+        "group": "f2eaf8a5.7bdf48",
+        "order": 2,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "score",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4",
+        "colors": [
+            "#ca3838",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 800,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "74bb8550.562edc",
+        "type": "function",
+        "z": "a3c15485.9e4108",
+        "name": "healthDataParser1",
+        "func": "var healthData = JSON.parse(msg.payload)\n\nreturn [\n    [\n        {\n            topic: \"heartrate\",\n            payload:healthData.heartrate\n            \n        },\n        {\n            topic: \"oxygen\",\n            payload:healthData.oxygen\n            \n        },\n        {\n            topic: \"temperature\",\n            payload:healthData.temperature\n        }\n    ],\n    {\n        payload:healthData.score\n    }\n];\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 280,
+        "wires": [
+            [
+                "a91a68d6.782638"
+            ],
+            [
+                "c32706ae.56d2e8"
+            ]
+        ]
+    },
+    {
+        "id": "f6c4bf49.183a5",
+        "type": "ui_chart",
+        "z": "a3c15485.9e4108",
+        "name": "monitorChart2",
+        "group": "5caadf11.13ddd",
+        "order": 1,
+        "width": "8",
+        "height": "4",
+        "label": "",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 800,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61cc5b93.768b64",
+        "type": "ui_gauge",
+        "z": "a3c15485.9e4108",
+        "name": "monitorScore2",
+        "group": "5caadf11.13ddd",
+        "order": 1,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "score",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4",
+        "colors": [
+            "#ca3838",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 800,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a5f8668f.d49e88",
+        "type": "mqtt in",
+        "z": "a3c15485.9e4108",
+        "name": "",
+        "topic": "users/1/health/data",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "57c57630.856f18",
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "74bb8550.562edc"
+            ]
+        ]
+    },
+    {
+        "id": "b024ea7b.d4ced8",
+        "type": "function",
+        "z": "a3c15485.9e4108",
+        "name": "healthDataParser2",
+        "func": "var healthData = JSON.parse(msg.payload)\n\nreturn [\n    [\n        {\n            topic: \"heartrate\",\n            payload:healthData.heartrate\n            \n        },\n        {\n            topic: \"oxygen\",\n            payload:healthData.oxygen\n            \n        },\n        {\n            topic: \"temperature\",\n            payload:healthData.temperature\n        }\n    ],\n    {\n        payload:healthData.score\n    }\n];\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 400,
+        "wires": [
+            [
+                "f6c4bf49.183a5"
+            ],
+            [
+                "61cc5b93.768b64"
+            ]
+        ]
+    },
+    {
+        "id": "dcae46be.381588",
+        "type": "mqtt in",
+        "z": "a3c15485.9e4108",
+        "name": "",
+        "topic": "users/2/health/data",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "57c57630.856f18",
+        "x": 330,
+        "y": 400,
+        "wires": [
+            [
+                "b024ea7b.d4ced8"
+            ]
+        ]
+    },
+    {
+        "id": "b4e9e45b.b79088",
+        "type": "ui_button",
+        "z": "a3c15485.9e4108",
+        "name": "monitorClear2",
+        "group": "5caadf11.13ddd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Clear",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "",
+        "x": 320,
+        "y": 360,
+        "wires": [
+            [
+                "f6c4bf49.183a5",
+                "61cc5b93.768b64"
+            ]
+        ]
+    },
+    {
+        "id": "ac830f93.94a4a",
+        "type": "function",
+        "z": "a3c15485.9e4108",
+        "name": "initSensorSimulator2",
+        "func": "flow.set(\"sensorSimulatorHeartrate2\", 65);\nflow.set(\"sensorSimulatorOxygen2\", 98);\nflow.set(\"sensorSimulatorTemperature2\", 36);\nflow.set(\"sensorSimulatorEnabled2\", false);\n\nreturn [{payload:65},{payload:98},{payload:36},{payload:false}];",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 740,
+        "wires": [
+            [
+                "fc33f847.d6af78"
+            ],
+            [
+                "c9eed566.71b6d8"
+            ],
+            [
+                "86c0c2a4.6367a"
+            ],
+            [
+                "2b064575.a5782a"
+            ]
+        ]
+    },
+    {
+        "id": "27aeea91.fd01a6",
+        "type": "function",
+        "z": "a3c15485.9e4108",
+        "name": "sendSensorSimulatorEvent1",
+        "func": "if (msg.payload) {\n    return {\n        topic:\"users/1/sensor/event\",\n        payload:\n        {\n            user:\"1\",\n            code:\"0\",\n            desc:\"connected\"\n        }\n    };\n} else {\n    return {\n        topic:\"users/1/sensor/event\",\n        payload:\n        {\n            user:\"1\",\n            code:\"1\",\n            desc:\"disconnected\"\n        }\n    };\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 940,
+        "y": 600,
+        "wires": [
+            [
+                "dae453ac.27b2f"
+            ]
+        ]
+    },
+    {
+        "id": "2da6e4d8.78033c",
+        "type": "function",
+        "z": "a3c15485.9e4108",
+        "name": "sendSensorSimulatorEvent2",
+        "func": "if (msg.payload) {\n    return {\n        topic:\"users/2/sensor/event\",\n        payload:\n        {\n            user:\"2\",\n            code:\"0\",\n            desc:\"connected\"\n        }\n    };\n} else {\n    return {\n        topic:\"users/2/sensor/event\",\n        payload:\n        {\n            user:\"2\",\n            code:\"1\",\n            desc:\"disconnected\"\n        }\n    };\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 940,
+        "y": 680,
+        "wires": [
+            [
+                "dae453ac.27b2f"
+            ]
+        ]
+    },
+    {
+        "id": "50e258f9.f337b8",
+        "type": "ui_chart",
+        "z": "a3c15485.9e4108",
+        "name": "monitorChart0",
+        "group": "2b1cb0f9.1a148",
+        "order": 1,
+        "width": "8",
+        "height": "4",
+        "label": "",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 800,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d61c4119.1c566",
+        "type": "ui_button",
+        "z": "a3c15485.9e4108",
+        "name": "monitorClear0",
+        "group": "2b1cb0f9.1a148",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Clear",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "",
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "50e258f9.f337b8",
+                "8f7f0c13.732e6"
+            ]
+        ]
+    },
+    {
+        "id": "8f7f0c13.732e6",
+        "type": "ui_gauge",
+        "z": "a3c15485.9e4108",
+        "name": "monitorScore0",
+        "group": "2b1cb0f9.1a148",
+        "order": 2,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "score",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4",
+        "colors": [
+            "#ca3838",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 800,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "90930994.503d08",
+        "type": "function",
+        "z": "a3c15485.9e4108",
+        "name": "healthDataParser0",
+        "func": "var healthData = JSON.parse(msg.payload)\n\nreturn [\n    [\n        {\n            topic: \"heartrate\",\n            payload:healthData.heartrate\n            \n        },\n        {\n            topic: \"oxygen\",\n            payload:healthData.oxygen\n            \n        },\n        {\n            topic: \"temperature\",\n            payload:healthData.temperature\n        }\n    ],\n    {\n        payload:healthData.score\n    }\n];\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 160,
+        "wires": [
+            [
+                "50e258f9.f337b8"
+            ],
+            [
+                "8f7f0c13.732e6"
+            ]
+        ]
+    },
+    {
+        "id": "aef1c162.8ca4a",
+        "type": "mqtt in",
+        "z": "a3c15485.9e4108",
+        "name": "",
+        "topic": "users/0/health/data",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "57c57630.856f18",
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "90930994.503d08"
+            ]
+        ]
+    },
+    {
+        "id": "e806341c.07d498",
+        "type": "function",
+        "z": "a3c15485.9e4108",
+        "name": "errorEventFilter",
+        "func": "if (msg.event == \"error\") {\n    return null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 40,
+        "wires": [
+            [
+                "90fc25da.5025d8"
+            ]
+        ]
+    }
+]

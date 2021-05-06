@@ -1,0 +1,12 @@
+{
+    "name": "health-monitoring-dashboard",
+    "description": "Healt Monitoring Dashboard",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flow.json",
+            "credentialsFile": "flow_cred.json"
+        }
+    }
+}
